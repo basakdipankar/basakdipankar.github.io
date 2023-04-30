@@ -1,5 +1,5 @@
 ---
 layout: home
-title: BLOG
+title: Blogs on my technical project experiences
 permalink: /blog
 ---
