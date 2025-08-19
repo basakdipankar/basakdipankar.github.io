@@ -235,17 +235,17 @@ a:hover {
   max-width: none;
 }
 
-.page-content .blog-main {
-  // flex: 2;
-  // min-width: 0; // Prevent flex item from overflowing
+.blog-main {
+  flex: 2;
+  min-width: 0; // Prevent flex item from overflowing
   float: left;
   width: 78%;
 }
 
-.page-content .blog-sidebar {
-  // flex: 1;
-  // min-width: 250px;
-  // flex-shrink: 0; // Prevent sidebar from shrinking too much
+.blog-sidebar {
+  flex: 1;
+  min-width: 250px;
+  flex-shrink: 0; // Prevent sidebar from shrinking too much
   float: right;
   width: 22%;
 
@@ -304,7 +304,7 @@ a:hover {
 }
 
 // Blog footer styling
-div.blog-footer {
+.blog-footer {
   text-align: center;
   border-top: 1px solid #eee;
   padding-top: 2rem;
@@ -313,16 +313,16 @@ div.blog-footer {
   color: #666;
 }
 
-div.blog-footer p {
+.blog-footer p {
   margin-bottom: 0.5rem;
 }
 
-div.blog-footer a {
+.blog-footer a {
   color: #2a7ae4;
   text-decoration: none;
 }
 
-div.blog-footer a:hover {
+.blog-footer a:hover {
   text-decoration: underline;
 }
 
