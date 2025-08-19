@@ -236,14 +236,19 @@ a:hover {
 }
 
 .page-content .blog-main {
-  flex: 2;
-  min-width: 0; // Prevent flex item from overflowing
+  // flex: 2;
+  // min-width: 0; // Prevent flex item from overflowing
+  float: left;
+  width: 78%;
 }
 
 .page-content .blog-sidebar {
-  flex: 1;
-  min-width: 250px;
-  flex-shrink: 0; // Prevent sidebar from shrinking too much
+  // flex: 1;
+  // min-width: 250px;
+  // flex-shrink: 0; // Prevent sidebar from shrinking too much
+  float: right;
+  width: 22%;
+
 }
 
 .blog-post {
@@ -299,25 +304,25 @@ a:hover {
 }
 
 // Blog footer styling
-.blog-footer {
+div.blog-footer {
+  text-align: center;
   border-top: 1px solid #eee;
   padding-top: 2rem;
   margin-top: 3rem;
-  text-align: center;
   font-size: 0.9rem;
   color: #666;
 }
 
-.blog-footer p {
+div.blog-footer p {
   margin-bottom: 0.5rem;
 }
 
-.blog-footer a {
+div.blog-footer a {
   color: #2a7ae4;
   text-decoration: none;
 }
 
-.blog-footer a:hover {
+div.blog-footer a:hover {
   text-decoration: underline;
 }
 
