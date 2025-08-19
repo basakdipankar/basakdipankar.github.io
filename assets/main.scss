@@ -2,7 +2,13 @@
 ---
 @import "minima";
 
-// Custom styles for portfolio website
+// Layout constraints
+.site-header .wrapper,
+.page-content .wrapper {
+  max-width: 900px;
+}
+
+// Home page styling
 .home-header {
   text-align: center;
   margin-bottom: 2rem;
@@ -16,17 +22,30 @@
   letter-spacing: -1px;
 }
 
-// Main content styling
-.page-content .wrapper {
-  max-width: 1200px; // Increased from 800px to accommodate sidebar
+// Global typography
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-// Override minima's wrapper for blog page specifically
-.blog-container {
-  max-width: none; // Remove any max-width constraints
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  color: #111;
 }
 
-// Navigation improvements
+// Global link styling
+a {
+  color: #2a7ae4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e5bb8;
+  text-decoration: underline;
+}
+
+// Navigation styling
 .site-header {
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
@@ -44,38 +63,11 @@
   text-decoration: none;
 }
 
-// Typography improvements
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  color: #111;
-}
-
-// Links styling
-a {
-  color: #2a7ae4;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #1e5bb8;
-  text-decoration: underline;
-}
-
 // Projects page styling
 .project-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #eee; // Made thicker for better separation
-}
-
-.project-item:last-child {
-  border-bottom: 2px solid #eee; // Keep border on last item too
+  border-bottom: 2px solid #eee;
 }
 
 .project-item h3 {
@@ -89,6 +81,77 @@ a:hover {
 
 .project-item ul li {
   margin-bottom: 0.25rem;
+}
+
+// Blog layout
+.blog-container {
+  max-width: none;
+}
+
+.blog-container .blog-main {
+  width: 78%;
+}
+
+.blog-container .blog-sidebar {
+  float: right;
+  width: 22%;
+}
+
+.blog-post {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.post-excerpt {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+// Blog sidebar
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.category-list,
+.connect-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.category-list li,
+.connect-list li {
+  margin-bottom: 0.5rem;
+}
+
+.category-list a,
+.connect-list a {
+  color: #2a7ae4;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.category-list a:hover,
+.connect-list a:hover {
+  text-decoration: underline;
 }
 
 // Footer styling
@@ -110,199 +173,6 @@ a:hover {
   text-align: center;
 }
 
-// Social links
-.social-media-list {
-  display: inline-block;
-  margin: 0;
-}
-
-.social-media-list li {
-  float: left;
-  margin: 0 5px;
-}
-
-.social-media-list li:first-of-type {
-  margin-left: 0;
-}
-
-.social-media-list li:last-of-type {
-  margin-right: 0;
-}
-
-// Blog post styling
-.post-list {
-  margin-left: 0;
-  list-style: none;
-}
-
-.post-list > li {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.post-list > li:last-child {
-  border-bottom: none;
-}
-
-.post-meta {
-  font-size: 14px;
-  color: #828282;
-  margin-bottom: 10px;
-}
-
-.post-meta a {
-  color: #2a7ae4;
-  text-decoration: none;
-}
-
-.post-meta a:hover {
-  text-decoration: underline;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-  font-weight: 300;
-  color: #111;
-  margin-bottom: 8px;
-}
-
-.post-link:hover {
-  color: #2a7ae4;
-  text-decoration: none;
-}
-
-// Blog page specific styling
-.page-content h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-}
-
-.page-content h2 a {
-  color: #111;
-  text-decoration: none;
-}
-
-.page-content h2 a:hover {
-  color: #2a7ae4;
-  text-decoration: underline;
-}
-
-.page-content hr {
-  border: none;
-  border-top: 1px solid #eee;
-  margin: 2rem 0;
-}
-
-.page-content h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-.page-content ul li {
-  margin-bottom: 0.5rem;
-}
-
-.page-content ul li a {
-  color: #2a7ae4;
-  text-decoration: none;
-}
-
-.page-content ul li a:hover {
-  text-decoration: underline;
-}
-
-// Blog excerpt styling
-.post-excerpt {
-  color: #666;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-// Blog container layout - Override Minima theme defaults
-.post-content .blog-container {
-  display: flex !important;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  width: 100%;
-  max-width: none;
-}
-
-.blog-container .blog-main {
-  // flex: 2;
-  // min-width: 0; // Prevent flex item from overflowing
-  // float: left;
-  width: 78%;
-}
-
-.blog-container .blog-sidebar {
-  // flex: 1;
-  // min-width: 250px;
-  // flex-shrink: 0; // Prevent sidebar from shrinking too much
-  float: right;
-  width: 22%;
-
-}
-
-.blog-post {
-  margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #eee; // Made thicker for better separation
-}
-
-.blog-post:last-child {
-  border-bottom: 2px solid #eee; // Keep border on last item too
-}
-
-.sidebar-section {
-  margin-bottom: 2rem;
-}
-
-.sidebar-section h3 {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  color: #111;
-}
-
-.category-list, .connect-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.category-list li, .connect-list li {
-  margin-bottom: 0.5rem;
-}
-
-.category-list, .connect-list {
-  color: #666;
-  font-size: 0.95rem;
-}
-
-.category-list a, .connect-list a {
-  color: #2a7ae4;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
-
-.category-list a:hover, .connect-list a:hover {
-  text-decoration: underline;
-}
-
-// Category tags styling
-.category-tag {
-  color: #2a7ae4;
-  font-size: 0.9rem;
-}
-
-// Blog footer styling
 .blog-footer {
   text-align: center;
   border-top: 1px solid #eee;
@@ -327,13 +197,14 @@ a:hover {
 
 // Responsive design
 @media screen and (max-width: 768px) {
-  .page-content .blog-container {
-    flex-direction: column !important;
-    gap: 2rem;
+  .blog-container .blog-main,
+  .blog-container .blog-sidebar {
+    width: 100%;
+    float: none;
   }
   
-  .page-content .blog-sidebar {
-    min-width: auto;
+  .blog-container .blog-sidebar {
+    margin-top: 2rem;
   }
 }
 
@@ -344,9 +215,5 @@ a:hover {
   
   .site-nav .page-link {
     margin-left: 10px;
-  }
-  
-  .page-content .blog-container {
-    gap: 1.5rem;
   }
 }
