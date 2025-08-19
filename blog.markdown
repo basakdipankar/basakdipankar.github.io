@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Blog
+title: BLOG
 permalink: /blog/
 ---
 
 <div class="blog-container">
   <div class="blog-main">
-    <h1>Blog</h1>
+    <!-- <h1>Blog</h1> -->
     
     {% for post in site.posts %}
       <div class="blog-post">
@@ -43,9 +43,4 @@ permalink: /blog/
       </ul>
     </div>
   </div>
-</div>
-
-<div class="blog-footer">
-  <p><a href="https://www.linkedin.com/in/dipankar-basak/">LinkedIn</a> | <a href="https://github.com/basakdipankar">GitHub</a> | <a href="mailto:dbasak2013@gmail.com">Email</a></p>
-  <p>© 2024 <a href="/">Dipankar Basak</a>. All rights reserved.</p>
 </div>

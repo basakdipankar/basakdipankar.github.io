@@ -16,11 +16,3 @@ My expertise spans across full-stack development, cloud technologies, and data e
 I'm always eager to learn new technologies and contribute to innovative projects that make a meaningful impact.
 
 ---
-
-**Connect with me:**
-
-[LinkedIn](https://www.linkedin.com/in/dipankar-basak/) | [GitHub](https://github.com/basakdipankar) | [Email](mailto:dbasak2013@gmail.com)
-
----
-
-© 2024 Dipankar Basak. All rights reserved.
