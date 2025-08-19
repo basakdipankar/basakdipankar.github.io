@@ -7,21 +7,19 @@
 .home-header {
   text-align: center;
   margin-bottom: 2rem;
-  
-  .site-title {
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: #333;
-    margin-bottom: 0;
-    letter-spacing: -1px;
-  }
+}
+
+.home-header .site-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 0;
+  letter-spacing: -1px;
 }
 
 // Main content styling
-.page-content {
-  .wrapper {
-    max-width: 800px;
-  }
+.page-content .wrapper {
+  max-width: 800px;
 }
 
 // Navigation improvements
@@ -31,17 +29,15 @@
   position: relative;
 }
 
-.site-nav {
-  .page-link {
-    color: #424242;
-    line-height: 1.5;
-    margin-left: 20px;
-    
-    &:hover {
-      color: #111;
-      text-decoration: none;
-    }
-  }
+.site-nav .page-link {
+  color: #424242;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+.site-nav .page-link:hover {
+  color: #111;
+  text-decoration: none;
 }
 
 // Typography improvements
@@ -60,11 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: #2a7ae4;
   text-decoration: none;
-  
-  &:hover {
-    color: #1e5bb8;
-    text-decoration: underline;
-  }
+}
+
+a:hover {
+  color: #1e5bb8;
+  text-decoration: underline;
 }
 
 // Projects page styling
@@ -72,23 +68,23 @@ a {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
-  
-  &:last-child {
-    border-bottom: none;
-  }
-  
-  h3 {
-    margin-bottom: 0.5rem;
-    color: #111;
-  }
-  
-  ul {
-    margin-top: 0.5rem;
-    
-    li {
-      margin-bottom: 0.25rem;
-    }
-  }
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.project-item ul {
+  margin-top: 0.5rem;
+}
+
+.project-item ul li {
+  margin-bottom: 0.25rem;
 }
 
 // Footer styling
@@ -96,30 +92,126 @@ a {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
   background-color: #fafafa;
-  
-  .footer-col-wrapper {
-    font-size: 15px;
-    color: #828282;
-  }
+}
+
+.site-footer .footer-col-wrapper {
+  font-size: 15px;
+  color: #828282;
 }
 
 // Social links
 .social-media-list {
   display: inline-block;
   margin: 0;
-  
-  li {
-    float: left;
-    margin: 0 5px;
-    
-    &:first-of-type {
-      margin-left: 0;
-    }
-    
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
+}
+
+.social-media-list li {
+  float: left;
+  margin: 0 5px;
+}
+
+.social-media-list li:first-of-type {
+  margin-left: 0;
+}
+
+.social-media-list li:last-of-type {
+  margin-right: 0;
+}
+
+// Blog post styling
+.post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.post-list > li {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #828282;
+  margin-bottom: 10px;
+}
+
+.post-meta a {
+  color: #2a7ae4;
+  text-decoration: none;
+}
+
+.post-meta a:hover {
+  text-decoration: underline;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.post-link:hover {
+  color: #2a7ae4;
+  text-decoration: none;
+}
+
+// Blog page specific styling
+.page-content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.page-content h2 a {
+  color: #111;
+  text-decoration: none;
+}
+
+.page-content h2 a:hover {
+  color: #2a7ae4;
+  text-decoration: underline;
+}
+
+.page-content hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2rem 0;
+}
+
+.page-content h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.page-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.page-content ul li a {
+  color: #2a7ae4;
+  text-decoration: none;
+}
+
+.page-content ul li a:hover {
+  text-decoration: underline;
+}
+
+// Blog excerpt styling
+.post-excerpt {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
 // Responsive design
@@ -128,42 +220,7 @@ a {
     font-size: 2rem;
   }
   
-  .site-nav {
-    .page-link {
-      margin-left: 10px;
-    }
-  }
-}
-
-// Blog post styling
-.post-list {
-  margin-left: 0;
-  list-style: none;
-  
-  > li {
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-}
-
-.post-meta {
-  font-size: 14px;
-  color: #828282;
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-  font-weight: 300;
-  color: #111;
-  
-  &:hover {
-    color: #2a7ae4;
-    text-decoration: none;
+  .site-nav .page-link {
+    margin-left: 10px;
   }
 }
