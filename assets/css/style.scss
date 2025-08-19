@@ -227,7 +227,7 @@ a:hover {
 }
 
 // Blog container layout - Override Minima theme defaults
-.page-content .blog-container {
+.post-content .blog-container {
   display: flex !important;
   gap: 3rem;
   margin-bottom: 3rem;
@@ -235,17 +235,17 @@ a:hover {
   max-width: none;
 }
 
-.blog-main {
-  flex: 2;
-  min-width: 0; // Prevent flex item from overflowing
-  float: left;
+.blog-container .blog-main {
+  // flex: 2;
+  // min-width: 0; // Prevent flex item from overflowing
+  // float: left;
   width: 78%;
 }
 
-.blog-sidebar {
-  flex: 1;
-  min-width: 250px;
-  flex-shrink: 0; // Prevent sidebar from shrinking too much
+.blog-container .blog-sidebar {
+  // flex: 1;
+  // min-width: 250px;
+  // flex-shrink: 0; // Prevent sidebar from shrinking too much
   float: right;
   width: 22%;
 
