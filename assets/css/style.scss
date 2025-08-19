@@ -19,7 +19,12 @@
 
 // Main content styling
 .page-content .wrapper {
-  max-width: 800px;
+  max-width: 1200px; // Increased from 800px to accommodate sidebar
+}
+
+// Override minima's wrapper for blog page specifically
+.blog-container {
+  max-width: none; // Remove any max-width constraints
 }
 
 // Navigation improvements
@@ -67,11 +72,11 @@ a:hover {
 .project-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee; // Made thicker for better separation
 }
 
 .project-item:last-child {
-  border-bottom: none;
+  border-bottom: 2px solid #eee; // Keep border on last item too
 }
 
 .project-item h3 {
@@ -233,11 +238,11 @@ a:hover {
 .blog-post {
   margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee; // Made thicker for better separation
 }
 
 .blog-post:last-child {
-  border-bottom: none;
+  border-bottom: 2px solid #eee; // Keep border on last item too
 }
 
 .sidebar-section {
@@ -261,6 +266,11 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+.category-list, .connect-list {
+  color: #666;
+  font-size: 0.95rem;
+}
+
 .category-list a, .connect-list a {
   color: #2a7ae4;
   text-decoration: none;
@@ -269,6 +279,12 @@ a:hover {
 
 .category-list a:hover, .connect-list a:hover {
   text-decoration: underline;
+}
+
+// Category tags styling
+.category-tag {
+  color: #2a7ae4;
+  font-size: 0.9rem;
 }
 
 // Blog footer styling

@@ -38,7 +38,6 @@ header_pages:
   - about.markdown
   - projects.markdown
   - blog.markdown
-  - tags.markdown
 
 # Social media links
 social_links:
