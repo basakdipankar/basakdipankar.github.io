@@ -214,7 +214,98 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+// Blog container layout
+.blog-container {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.blog-main {
+  flex: 2;
+}
+
+.blog-sidebar {
+  flex: 1;
+  min-width: 250px;
+}
+
+.blog-post {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-post:last-child {
+  border-bottom: none;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.category-list, .connect-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-list li, .connect-list li {
+  margin-bottom: 0.5rem;
+}
+
+.category-list a, .connect-list a {
+  color: #2a7ae4;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.category-list a:hover, .connect-list a:hover {
+  text-decoration: underline;
+}
+
+// Blog footer styling
+.blog-footer {
+  border-top: 1px solid #eee;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.blog-footer p {
+  margin-bottom: 0.5rem;
+}
+
+.blog-footer a {
+  color: #2a7ae4;
+  text-decoration: none;
+}
+
+.blog-footer a:hover {
+  text-decoration: underline;
+}
+
 // Responsive design
+@media screen and (max-width: 768px) {
+  .blog-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .blog-sidebar {
+    min-width: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .home-header .site-title {
     font-size: 2rem;
@@ -222,5 +313,9 @@ a:hover {
   
   .site-nav .page-link {
     margin-left: 10px;
+  }
+  
+  .blog-container {
+    gap: 1.5rem;
   }
 }
