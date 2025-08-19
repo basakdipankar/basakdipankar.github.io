@@ -21,16 +21,29 @@
 title: Dipankar Basak
 email: dbasak2013@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  If you would like to get introduced to me, you have come to the right
-  place. Here, I express my thoughts and experiences. 
+  Software Engineer | Technology Enthusiast | Full-Stack Developer
+  Passionate about building scalable applications and exploring cutting-edge technologies.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: basakdipankar
+linkedin_username: dipankar-basak
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Navigation pages
+header_pages:
+  - about.markdown
+  - projects.markdown
+  - blog.markdown
+  - tags.markdown
+
+# Social media links
+social_links:
+  github: basakdipankar
+  linkedin: dipankar-basak
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,5 +64,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-header_pages:
-  - blog.markdown

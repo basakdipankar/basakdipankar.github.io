@@ -1,19 +1,26 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
+title: ""
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<div class="home-header">
+  <h1 class="site-title">Dipankar Basak</h1>
+</div>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+---
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I am Dipankar, a passionate software engineer and technology enthusiast. I specialize in building scalable applications and exploring cutting-edge technologies to solve real-world problems.
 
+My expertise spans across full-stack development, cloud technologies, and data engineering. I enjoy working on challenging projects that push the boundaries of what's possible with modern technology.
 
-[jekyll-organization]: https://github.com/jekyll
+I'm always eager to learn new technologies and contribute to innovative projects that make a meaningful impact.
+
+---
+
+**Connect with me:**
+
+[LinkedIn](https://www.linkedin.com/in/dipankar-basak/) | [GitHub](https://github.com/basakdipankar) | [Email](mailto:dbasak2013@gmail.com)
+
+---
+
+© 2024 Dipankar Basak. All rights reserved.
