@@ -219,20 +219,24 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-// Blog container layout
-.blog-container {
-  display: flex;
+// Blog container layout - Override Minima theme defaults
+.page-content .blog-container {
+  display: flex !important;
   gap: 3rem;
   margin-bottom: 3rem;
+  width: 100%;
+  max-width: none;
 }
 
-.blog-main {
+.page-content .blog-main {
   flex: 2;
+  min-width: 0; // Prevent flex item from overflowing
 }
 
-.blog-sidebar {
+.page-content .blog-sidebar {
   flex: 1;
   min-width: 250px;
+  flex-shrink: 0; // Prevent sidebar from shrinking too much
 }
 
 .blog-post {
@@ -312,12 +316,12 @@ a:hover {
 
 // Responsive design
 @media screen and (max-width: 768px) {
-  .blog-container {
-    flex-direction: column;
+  .page-content .blog-container {
+    flex-direction: column !important;
     gap: 2rem;
   }
   
-  .blog-sidebar {
+  .page-content .blog-sidebar {
     min-width: auto;
   }
 }
@@ -331,7 +335,7 @@ a:hover {
     margin-left: 10px;
   }
   
-  .blog-container {
+  .page-content .blog-container {
     gap: 1.5rem;
   }
 }
