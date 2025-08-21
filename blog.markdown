@@ -13,7 +13,7 @@ permalink: /blog/
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p class="post-meta">{{ post.date | date: "%B %d, %Y" }} . 
         {% for category in post.categories %}
-          <a href="/tags/#{{ category | slugify }}">{{ category | replace: '-', ' ' | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
+          <a href="/categories/#{{ category | slugify }}">{{ category | replace: '-', ' ' | capitalize }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         </p>
         {% if post.excerpt %}
@@ -29,7 +29,7 @@ permalink: /blog/
       <ul class="category-list">
         {% assign categories = site.categories | sort %}
         {% for category in categories %}
-          <li><a href="/tags/#{{ category[0] | slugify }}">{{ category[0] | replace: '-', ' ' | capitalize }}</a> ({{ category[1] | size }})</li>
+          <li><a href="/categories/#{{ category[0] | slugify }}">{{ category[0] | replace: '-', ' ' | capitalize }}</a> ({{ category[1] | size }})</li>
         {% endfor %}
       </ul>
     </div>
